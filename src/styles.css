@@ -36,6 +36,11 @@ p {
   text-align: center;
 }
 
+a {
+  color: rgb(177, 177, 177);
+  text-decoration: none;
+}
+
 h3.weathertype {
   font-weight: 300;
 }
@@ -43,6 +48,7 @@ h3.weathertype {
 .weather-app {
   display: block;
   margin: 60px auto;
+  margin-bottom: 0;
   text-align: center;
   background-color: rgba(255, 254, 254, 0.297);
   border-radius: 25px;
@@ -82,4 +88,13 @@ div.gryp {
 
 .week-row {
   margin-top: 10%;
+}
+
+.footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 2vw;
 }
