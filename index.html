@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/c4cc1ae2a8.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="search">
+                <form class="form-inline my-2 my-lg-0" id="search-form">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Enter a city"
+                        aria-label="Search city" id="Search-text-input" />
+                    <button class="btn btn-info my-4 my-lg-5" type="submit" id="button-search">
+                        <i class="fas fa-search-location"> Search </i>
+                    </button>
+                    <button class="btn btn-info my-4 my-lg-5" type="submit" id="button-current-location">
+                        <i class="fas fa-location-arrow"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h1 style="font-size:4vw" id="city"></h1>
+                        <h3 id="date">Sunday</h3>
+                        <h3 class="weatherType" id="descriptionWeather"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="info row align-items-center">
+                    <div class="col">
+                        <h2><span id="temperature"></span> <span>ºC</span></h2>
+                        <div class="add-info">
+                            <p>Humidity: <span id="humidity"></span> %</p>
+                            <p>Wind: <span id="windSpeed"></span> km/h</p>
+                        </div>
+                    </div>
+                    <div class="gryp col">
+                        <img src="img/rain.png" class="img-fluid" alt="Rain" />
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="week-row form-inline">
+                    <div class="col">
+                        <p>Mon</p>
+                        <div class="img-week">
+                            <img src="img/rain.png" class="img-fluid" alt="Rain" />
+                        </div>
+                        <p>18ºC</p>
+                    </div>
+                    <div class="col">
+                        <div class="line">
+                            <p>Tue</p>
+                            <div class="img-week">
+                                <img src="img/part-cloudy.png" class="img-fluid" alt="party-cloudy" />
+                            </div>
+                            <p>17ºC</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="line">
+                            <p>Wed</p>
+                            <div class="img-week">
+                                <img src="img/part-cloudy.png" class="img-fluid" alt="part-cloudy" />
+                            </div>
+                            <p>17ºC</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="line">
+                            <p>Thu</p>
+                            <div class="img-week">
+                                <img src="img/storm.png" class="img-fluid" alt="storm" />
+                            </div>
+                            <p>15ºC</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="line">
+                            <p>Fri</p>
+                            <div class="img-week">
+                                <img src="img/sun.png" class="img-fluid" alt="sunny" />
+                            </div>
+                            <p>21ºC</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script type="text/javaScript" src="src/index.js"></script>
+</body>
+
+</html>
